@@ -1,3 +1,5 @@
+/* Home Page */
+
 .blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
 	float: initial;
 	width: initial;
@@ -5,8 +7,13 @@
 * {
 	font-family: Lato;
 }
+
 body {
-	font-size: 16px;
+	font-size: 14px;
+}
+
+h2 {
+	font-size: 2.5em;
 }
 
 .record {
@@ -37,5 +44,88 @@ body {
 
 .left h2, .right h2 {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 2em;
+	font-size: 2.5em;
+}
+
+
+/* About Page */
+
+.about-1 {
+	display: flex;
+}
+
+.about-1 .right {
+	padding-left: 50px;
+}
+
+.about-1 h4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.about-2-1, .about-2-2, .about-2-3 {
+	display: flex;
+}
+
+.about-2-1 .right, .about-2-2 .right, .about-2-3 .right {
+	padding-top: 120px;
+	padding-left: 50px;
+}
+
+.about-2-3 .right {
+	padding-bottom: 50px;
+}
+
+.about-3-1 img, .about-3-2 img {
+	padding-right: 20px;
+	width: 800px;
+	height: auto;
+}
+
+.about-3-1 {
+	padding-bottom: 30px;
+}
+
+.about-3-1 h3, .about-3-2 h3 {
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 120px;
+}
+
+.about-3-1 .right, .about-3-2 .right {
+	padding-left: 50px;
+}
+
+.about-3-1 .left, .about-3-1 .right, .about-3-2 .left, .about-3-2 .right {
+	display: flex;
+}
+
+.about-3-1, .about-3-2 {
+	display: flex;
+}
+
+.about-3-1 p, .about-3-2 p {
+	font-size: 11.5px;
+}
+
+.about-4-1 {
+	display: flex;
+}
+
+.about-4-1 .left, .about-4-1 .middle, .about-4-1 .right {
+	flex: 1;
+	text-align: center;
+}
+
+.about-4-1 h3 {
+	font-weight: bold;
+}
+
+.about-4-1 .middle {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.about-1, .about-2, .about-3 {
+	padding-bottom: 50px;
 }
