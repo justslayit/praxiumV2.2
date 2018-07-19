@@ -35,6 +35,28 @@ get_header(); ?>
 								</div>
 							</div>
 
+							<div class="section-3">
+								<div class="left">
+									<h2><?php the_field('section_3_header'); ?></h2>
+									<p><?php the_field('section_3_text'); ?></p>
+									<a href="<?php the_field('section_3_button'); ?>">Read More</a>
+								</div>
+								<div class="right">
+									<img src="<?php the_field('section_3_image'); ?>">
+								</div>
+							</div>
+
+							<div class="section-4">
+								<div class="left">
+									<h2><?php the_field('section_4_header'); ?></h2>
+									<p><?php the_field('section_4_text'); ?></p>
+									<a href="<?php the_field('section_4_button'); ?>">Subscribe</a>
+								</div>
+								<div class="right">
+									<img src="<?php the_field('section_4_image'); ?>">
+								</div>
+							</div>
+
 							<div class="entry-content">
 								<?php
 									/* translators: %s: Name of current post */
