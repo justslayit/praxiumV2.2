@@ -411,9 +411,11 @@ add_action( 'wp_head', 'twentyseventeen_colors_css_wrap' );
 function twentyseventeen_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
+	wp_enqueue_style( 'custom-fonts', 'https://fonts.googleapis.com/css?family=Permanent+Marker', array(), null);
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'custom-style', get_theme_file_uri( 'custom.css' ) );
 
 	// Load the dark colorscheme.
 	if ( 'dark' === get_theme_mod( 'colorscheme', 'light' ) || is_customize_preview() ) {

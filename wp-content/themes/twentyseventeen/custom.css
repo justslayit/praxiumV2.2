@@ -1,0 +1,27 @@
+.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+	float: initial;
+	width: initial;
+}
+body {
+	font-size: 16px;
+}
+
+.record {
+	display: flex;
+}
+.students, .support {
+	flex: 1;
+}
+
+.section-1, .section-2  {
+	display: flex;
+}
+
+.left, .right {
+	flex: 1;
+}
+
+.left h2, .right h2 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+}
