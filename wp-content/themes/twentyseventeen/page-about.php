@@ -12,7 +12,9 @@ get_header(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<div class="about-1">
+			<div class="about">
+
+				<div class="section-1">
 								<div class="left">
 									<h2><?php the_field('section_1_header'); ?></h2>
 									<p><?php the_field('section_1_text_1'); ?></p>
@@ -24,12 +26,11 @@ get_header(); ?>
 								</div>
 				</div>
 
-				<div class="about-2">
+				<div class="section-2">
 						<div class="left">
 								<h2><?php the_field('section_2_header'); ?></h2>
 						</div>
-						<div class="about-2-0">
-							<div class="about-2-1">
+							<div class="section-2-1">
 									<div class="left">
 										<img src="<?php the_field('section_2_image_1'); ?>">
 									</div>
@@ -37,7 +38,7 @@ get_header(); ?>
 										<img src="<?php the_field('section_2_image_2'); ?>">
 									</div>
 							</div>
-							<div class="about-2-2">
+							<div class="section-2-2">
 									<div class="left">
 										<img src="<?php the_field('section_2_image_3'); ?>">
 									</div>
@@ -45,25 +46,24 @@ get_header(); ?>
 										<img src="<?php the_field('section_2_image_4'); ?>">
 									</div>
 							</div>
-							<div class="about-2-3">
-										<div class="left">
+							<div class="section-2-3">
+									<div class="left">
 										<img src="<?php the_field('section_2_image_5'); ?>">
 									</div>
 									<div class="right">
 										<img src="<?php the_field('section_2_image_6'); ?>">
 									</div>
 							</div>
-						</div>
+				</div>
 									<div class="left">
 										<p><?php the_field('section_2_text'); ?></p>
 									</div>
-				</div>
 
-				<div class="about-3">
+				<div class="section-3">
 						<div class="left">
 							<h2><?php the_field('section_3_header'); ?></h2>
 						</div>
-								<div class="about-3-1">	
+								<div class="section-3-1">	
 									<div class="left">
 										<div>
 											<img src="<?php the_field('section_3_image_1'); ?>">
@@ -83,7 +83,7 @@ get_header(); ?>
 										</div>
 									</div>
 								</div>
-								<div class="about-3-2">	
+								<div class="section-3-2">	
 									<div class="left">
 										<div>
 											<img src="<?php the_field('section_3_image_3'); ?>">
@@ -105,11 +105,11 @@ get_header(); ?>
 								</div>
 				</div>
 
-				<div class="about-4">
+				<div class="section-4">
 						<div class="left">
 							<h2><?php the_field('section_4_header'); ?></h2>
 						</div>
-							<div class="about-4-1">
+							<div class="section-4-1">
 								<div class="left">
 									<img src="<?php the_field('section_4_image_1'); ?>">
 									<h3><?php the_field('section_4_image_1_header'); ?></h3>
@@ -127,6 +127,8 @@ get_header(); ?>
 								</div>
 							</div>
 				</div>
+
+			</div>
 
 				<div class="entry-content">
 					<?php

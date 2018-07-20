@@ -13,29 +13,40 @@ body {
 }
 
 h2 {
+	font-family: 'Permanent Marker', cursive;
 	font-size: 2.5em;
+}
+
+h3, h4 {
+	font-weight: bold;
 }
 
 .record {
 	display: flex;
+	padding-top: 50px;
 }
 
 .students, .support {
 	flex: 1;
 }
 
-
 .students img {
-	margin-top: 30px;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+.support img {
+	margin-top: -30px;
+	margin-left: -30px;
 }
 
 .support {
-	padding-left: 50px;
+	padding-left: 80px;
 }
 
 .section-1, .section-2, .section-3, .section-4  {
 	display: flex;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .left, .right {
@@ -47,85 +58,268 @@ h2 {
 	font-size: 2.5em;
 }
 
+.caption {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: -50px;
+	margin-top: -20px;
+}
+
+.caption .two {
+	padding-left: 100px;
+	padding-right: 20px;
+}
+
+.caption p {
+	margin-top: -10px;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"header image"
+	"text image"
+	"button image";
+}
+.section-2 {
+	grid-template-areas: 
+	"image header"
+	"image text"
+	"image button";
+}			
+
+.section-4 {
+	grid-template-areas:
+	"header image"
+	"text image"
+	"button image"
+	"caption caption";
+}
+
+.header {
+	grid-area: header;
+}
+.text {
+	grid-area: text;
+}
+.button {
+	grid-area: button;
+}
+.image {
+	grid-area: image;
+}
+
+.caption {
+	grid-area: caption;
+}
+
+.section-2 .image {
+	padding-right: 20px;
+}
+
 
 /* About Page */
 
-.about-1 {
+.about .section-1 {
 	display: flex;
 }
 
-.about-1 .right {
+.about .section-1 .right {
 	padding-left: 50px;
 }
 
-.about-1 h4 {
+.about h4 {
 	font-size: 16px;
-	font-weight: bold;
 }
 
-.about-2-1, .about-2-2, .about-2-3 {
+.about .section-2, .about .section-3, .about .section-4{
+	display: flex;
+	flex-direction: column;
+}
+
+.about .section-2-1, .about .section-2-2, .about .section-2-3 {
 	display: flex;
 }
 
-.about-2-1 .right, .about-2-2 .right, .about-2-3 .right {
-	padding-top: 120px;
+
+.about .section-2-1 .right, .about .section-2-2 .right, .about .section-2-3 .right {
+	padding-top: 100px;
 	padding-left: 50px;
 }
 
-.about-2-3 .right {
-	padding-bottom: 50px;
+.about .section-3-1, .about .section-3-2, .about .section-3-1 .left, .about .section-3-1 .right, .about .section-3-2 .left, .about .section-3-2 .right, .about .section-4-1 {
+	display: flex;
 }
 
-.about-3-1 img, .about-3-2 img {
+.about .section-3 img {
 	padding-right: 20px;
 	width: 800px;
 	height: auto;
 }
 
-.about-3-1 {
+.about .section-3-1 {
 	padding-bottom: 30px;
 }
 
-.about-3-1 h3, .about-3-2 h3 {
-	font-weight: bold;
+.about .section-3 h3 {
 	font-size: 14px;
 	padding-top: 120px;
 }
 
-.about-3-1 .right, .about-3-2 .right {
+.about .section-3-1 .right, .about .section-3-2 .right {
 	padding-left: 50px;
 }
 
-.about-3-1 .left, .about-3-1 .right, .about-3-2 .left, .about-3-2 .right {
-	display: flex;
-}
-
-.about-3-1, .about-3-2 {
-	display: flex;
-}
-
-.about-3-1 p, .about-3-2 p {
+.about .section-3-1 p, .about .section-3-2 p {
 	font-size: 11.5px;
 }
 
-.about-4-1 {
-	display: flex;
-}
-
-.about-4-1 .left, .about-4-1 .middle, .about-4-1 .right {
+.about .section-4-1 .left, .about .section-4-1 .middle, .about .section-4-1 .right {
 	flex: 1;
 	text-align: center;
 }
 
-.about-4-1 h3 {
-	font-weight: bold;
-}
-
-.about-4-1 .middle {
+.about .section-4-1 .middle {
 	padding-left: 50px;
 	padding-right: 50px;
 }
 
-.about-1, .about-2, .about-3 {
+.about .section-1, .about .section-2, .about .section-3 {
 	padding-bottom: 50px;
+}
+
+
+/* Contact Page */
+
+.contact .section-1, .contact .section-2, .contact .info, .contact .name {
+	display: flex;
+}
+
+.social { 
+	padding-left: 18px;
+}
+
+.social img {
+	display: inline;
+	width: 50px;
+	padding-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#img3 {
+	margin-bottom: -12px;
+}
+
+.send {
+	float: right;
+	margin-right: -20px;
+}
+
+.fname, .lname, .email, .subject, .message, .send { 
+	padding-top: 20px;
+}
+
+.lname {
+	padding-left: 20px;
+}
+
+label {
+	margin-bottom: -20px;
+}
+
+.contact .section-1 .left {
+	text-align: center;
+}
+
+.contact .section-2 {
+	padding-top: 50px;
+}
+
+.contact .info h4, .contact .info p{
+	padding-left: 75px;
+}
+
+
+/* Join Us Page */
+.join-us .section-1 {
+	display: flex;
+}
+
+.join-us .section-1 .left {
+	padding-right: 50px;
+}
+
+.join-us .section-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.join-us .section-2-1, .join-us .section-2-2 {
+	display: flex;
+}
+
+.join-us .section-2-1 .left, .join-us .section-2-1 .right {
+	padding: 20px;
+	text-align: center;
+}
+
+.join-us .section-2-1::before, .join-us .section-2-1::after {
+	content: '';
+	flex: 0.5;
+}
+
+.join-us .section-2-2 .left, .join-us .section-2-2 .middle, .join-us .section-2-2 .right {
+	flex: 1;
+	padding: 20px;
+	text-align: center;
+}
+
+.join-us .section-2 img {
+	height: 200px;
+	margin-bottom: -30px;
+}
+
+
+/* Mobile Ver. */
+@media screen and (max-width: 768px) {
+
+	/* Home Page */
+
+	.section-1, .section-2, .section-3, .section-4 {
+		display: initial;	
+	}
+
+	.section-1, .section-2, .section-3, .section-4, .record {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.support {
+		padding-left: 0;
+	}
+
+	.support img {
+		margin-left: 14px;
+	}
+
+	.students {
+		margin-top: -100px;
+	}
+
+	.caption .one {
+		margin-left: 60px;
+	}
+
+	.caption {
+		padding-top: 50px;
+		margin-bottom: 10px;
+	}
+
+	.button {
+		padding-bottom: 50px;
+	}
+
 }

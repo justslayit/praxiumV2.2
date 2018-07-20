@@ -13,6 +13,8 @@ get_header(); ?>
 					<div class="panel-content">
 						<div class="wrap">
 
+								<div class="home">
+
 							<div class="section-1">
 								<div class="left">
 									<h2><?php the_field('section_1_header'); ?></h2>
@@ -56,6 +58,18 @@ get_header(); ?>
 									<img src="<?php the_field('section_4_image'); ?>">
 								</div>
 							</div>
+							<div class="caption">
+								<div class="one">
+									<h4><?php the_field('section_4_text_2'); ?></h4>
+									<p><?php the_field('section_4_text_3'); ?></p>
+								</div>
+								<div class="two">
+									<h4><?php the_field('section_4_text_4'); ?></h4>
+									<p><?php the_field('section_4_text_5'); ?></p>
+								</div>
+							</div>
+						</div>
+
 
 							<div class="entry-content">
 								<?php
