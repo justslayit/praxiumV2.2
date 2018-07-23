@@ -491,4 +491,13 @@ label {
 
 	/* Join Us Page */
 
+	.join-us .section-1, .join-us .section-2-1, .join-us .section-2-2 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.join-us .section-1, .join-us .section-2-1 .left {
+		padding-bottom: 120px;
+	}
+
 }

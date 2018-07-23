@@ -15,14 +15,6 @@ get_header(); ?>
 				<div class="join-us">
 
 					<div class="section-1">
-									<!-- <div class="left">
-										<h2><?php the_field('section_1_header'); ?></h2>
-										<p><?php the_field('section_1_text'); ?></p>
-										<a href="<?php the_field('section_1_button'); ?>">Join Us</a>
-									</div>
-									<div class="right">
-										<img src="<?php the_field('section_1_image'); ?>">
-									</div> -->
 								<div class="header">
 									<h2><?php the_field('section_1_header'); ?></h2>
 								</div>
