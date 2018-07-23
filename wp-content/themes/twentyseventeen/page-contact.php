@@ -43,14 +43,14 @@ get_header(); ?>
 								</div>
 					</div>
 
-					<div class="section-2">
+					<!-- <div class="section-2">
 								<div class="left">
-									<h2><?php the_field('section_2_header'); ?></h2>
-									<p><?php the_field('section_2_text'); ?></p>
-									<a href="<?php the_field('section_2_button'); ?>">Subscribe</a>
+									<h2 class="header"><?php the_field('section_2_header'); ?></h2>
+									<p class="text"><?php the_field('section_2_text'); ?></p>
+									<a class="button" href="<?php the_field('section_2_button'); ?>">Subscribe</a>
 								</div>
 								<div class="right">
-									<img src="<?php the_field('section_2_image'); ?>">
+									<img class="image" src="<?php the_field('section_2_image'); ?>">
 								</div>
 					</div>
 					<div class="caption">
@@ -62,7 +62,34 @@ get_header(); ?>
 									<h4><?php the_field('section_2_text_4'); ?></h4>
 									<p><?php the_field('section_2_text_5'); ?></p>
 								</div>
+					</div> -->
+
+
+					<div class="section-2">
+								<div class="header">
+									<h2><?php the_field('section_2_header'); ?></h2>
+								</div>
+								<div class="image">
+									<img src="<?php the_field('section_2_image'); ?>">
+								</div>
+								<div class="caption">
+									<div class="one">
+										<h4><?php the_field('section_2_text_2'); ?></h4>
+										<p><?php the_field('section_2_text_3'); ?></p>
+									</div>
+									<div class="two">
+										<h4><?php the_field('section_2_text_4'); ?></h4>
+										<p><?php the_field('section_2_text_5'); ?></p>
+									</div>
+								</div>
+								<div class="text">
+									<p><?php the_field('section_2_text'); ?></p>
+								</div>
+								<div class="button">
+									<a href="<?php the_field('section_2_button'); ?>">Subscribe</a>
+								</div>
 					</div>
+
 				</div>
 
 
