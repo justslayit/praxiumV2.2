@@ -13,61 +13,78 @@ get_header(); ?>
 					<div class="panel-content">
 						<div class="wrap">
 
-								<div class="home">
+						<div class="home">
 
 							<div class="section-1">
-								<div class="left">
+								<div class="header">
 									<h2><?php the_field('section_1_header'); ?></h2>
-									<p><?php the_field('section_1_text'); ?></p>
-									<a href="<?php the_field('section_1_button'); ?>">Read More</a>
 								</div>
-								<div class="right">
+								<div class="image">
 									<img src="<?php the_field('section_1_image'); ?>">
+								</div>
+								<div class="text">
+									<p><?php the_field('section_1_text'); ?></p>
+								</div>
+								<div class="button">
+									<a href="<?php the_field('section_1_button'); ?>">Read More</a>
 								</div>
 							</div>
 
 							<div class="section-2">
-								<div class="left">
+								<div class="header">
+									<h2><?php the_field('section_2_header'); ?></h2>
+								</div>
+								<div class="image">
 									<img src="<?php the_field('section_2_image'); ?>">
 								</div>
-								<div class="right">
-									<h2><?php the_field('section_2_header'); ?></h2>
+								<div class="text">
 									<p><?php the_field('section_2_text'); ?></p>
+								</div>
+								<div class="button">
 									<a href="<?php the_field('section_2_button'); ?>">Read More</a>
 								</div>
 							</div>
 
 							<div class="section-3">
-								<div class="left">
+								<div class="header">
 									<h2><?php the_field('section_3_header'); ?></h2>
-									<p><?php the_field('section_3_text'); ?></p>
-									<a href="<?php the_field('section_3_button'); ?>">Read More</a>
 								</div>
-								<div class="right">
+								<div class="image">
 									<img src="<?php the_field('section_3_image'); ?>">
+								</div>
+								<div class="text">
+									<p><?php the_field('section_3_text'); ?></p>
+								</div>
+								<div class="button">
+									<a href="<?php the_field('section_3_button'); ?>">Read More</a>
 								</div>
 							</div>
 
 							<div class="section-4">
-								<div class="left">
+								<div class="header">
 									<h2><?php the_field('section_4_header'); ?></h2>
-									<p><?php the_field('section_4_text'); ?></p>
-									<a href="<?php the_field('section_4_button'); ?>">Subscribe</a>
 								</div>
-								<div class="right">
+								<div class="image">
 									<img src="<?php the_field('section_4_image'); ?>">
 								</div>
-							</div>
-							<div class="caption">
-								<div class="one">
-									<h4><?php the_field('section_4_text_2'); ?></h4>
-									<p><?php the_field('section_4_text_3'); ?></p>
+								<div class="caption">
+									<div class="one">
+										<h4><?php the_field('section_4_text_2'); ?></h4>
+										<p><?php the_field('section_4_text_3'); ?></p>
+									</div>
+									<div class="two">
+										<h4><?php the_field('section_4_text_4'); ?></h4>
+										<p><?php the_field('section_4_text_5'); ?></p>
+									</div>
 								</div>
-								<div class="two">
-									<h4><?php the_field('section_4_text_4'); ?></h4>
-									<p><?php the_field('section_4_text_5'); ?></p>
+								<div class="text">
+									<p><?php the_field('section_4_text'); ?></p>
+								</div>
+								<div class="button">
+									<a href="<?php the_field('section_4_button'); ?>">Subscribe</a>
 								</div>
 							</div>
+			
 						</div>
 
 
