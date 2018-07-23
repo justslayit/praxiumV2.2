@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="about">
 
 				<div class="section-1">
-								<div class="left">
+								<!-- <div class="left">
 									<h2><?php the_field('section_1_header'); ?></h2>
 									<p><?php the_field('section_1_text_1'); ?></p>
 									<h4><?php the_field('section_1_text_2_header'); ?></h4>
@@ -23,6 +23,17 @@ get_header(); ?>
 								</div>
 								<div class="right">
 									<img src="<?php the_field('section_1_image'); ?>">
+								</div> -->
+								<div class="header">
+									<h2><?php the_field('section_1_header'); ?></h2>
+								</div>
+								<div class="image">
+									<img src="<?php the_field('section_1_image'); ?>">
+								</div>
+								<div class="text">
+									<p><?php the_field('section_1_text_1'); ?></p>
+									<h4><?php the_field('section_1_text_2_header'); ?></h4>
+									<p><?php the_field('section_1_text_2'); ?></p>
 								</div>
 				</div>
 
