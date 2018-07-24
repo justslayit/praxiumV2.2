@@ -405,6 +405,7 @@ label {
 
 	.support {
 		padding-left: 0;
+		padding-top: 20px;
 	}
 
 	.support img {
@@ -425,7 +426,9 @@ label {
 	}
 
 	.button {
-		padding-bottom: 50px;
+		padding-bottom: 25px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	/* About Page */
@@ -551,6 +554,10 @@ label {
 
 	.join-us #content-mobile h2 {
 		padding-top: 80px;
+	}
+
+	.slide img {
+		padding-top: 50px;
 	}
 
 	.slick-arrow {
