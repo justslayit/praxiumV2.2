@@ -570,7 +570,16 @@ label {
 		text-align: center;
 		font-size: 2em;
 		padding: 0;
-		background-color: rgba(0,0,0,0.3);	
+		background-color: rgba(237,118,0,0.3);	
+	}
+
+
+	.slick-arrow:focus {
+		background-color: rgba(237,118,0,0.3);	
+	}
+
+	.slick-arrow:hover {
+		background-color: rgba(237,118,0,1);	
 	}
 
 	.slick-prev {
@@ -595,10 +604,10 @@ label {
 		width: 10px;
 		height: 10px;
 		border-radius: 50%;
-		background-color: rgba(0,0,0,0.3);
+		background-color: rgba(237,118,0,0.3);
 	}
 	.slick-dots .slick-active button {
-		background-color: rgba(0,0,0,1);
+		background-color: rgba(237,118,0,1);
 	}
 	
 }
