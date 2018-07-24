@@ -30,7 +30,7 @@ get_header(); ?>
  
 					</div> 
 
-				<div id=”content-desktop”> 
+				<div id="content-desktop"> 
 
 					<div class="section-2">
 							<div class="section-2-1">
@@ -66,82 +66,50 @@ get_header(); ?>
 					</div> 
 				</div>
 
-				<div id=”content-mobile”>
+				<div id="content-mobile">
 
 					<ul class="slides">
-					    <input type="radio" name="radio-btn" id="img-1" checked />
+
 					    <li class="slide-container">
 							<div class="slide">
 								<img src="<?php the_field('section_2_image_1'); ?>">
 								<h2><?php the_field('section_2_header_1'); ?></h2>
 								<p><?php the_field('section_2_text_1'); ?></p>
 					        </div>
-							<div class="nav">
-								<label for="img-5" class="prev">&#x2039;</label>
-								<label for="img-2" class="next">&#x203a;</label>
-							</div>
 					    </li>
 
-					    <input type="radio" name="radio-btn" id="img-2" />
 					    <li class="slide-container">
 					        <div class="slide">
 					        	<img src="<?php the_field('section_2_image_2'); ?>">
 								<h2><?php the_field('section_2_header_2'); ?></h2>
 								<p><?php the_field('section_2_text_2'); ?></p>
 					        </div>
-							<div class="nav">
-								<label for="img-1" class="prev">&#x2039;</label>
-								<label for="img-3" class="next">&#x203a;</label>
-							</div>
 					    </li>
 
-					    <input type="radio" name="radio-btn" id="img-3" />
 					    <li class="slide-container">
 					        <div class="slide">
-								<img src="<?php the_field('section_2_image_3'); ?>">
+								<img id="img3" src="<?php the_field('section_2_image_3'); ?>">
 								<h2><?php the_field('section_2_header_3'); ?></h2>
 								<p><?php the_field('section_2_text_3'); ?></p>
 					        </div>
-							<div class="nav">
-								<label for="img-2" class="prev">&#x2039;</label>
-								<label for="img-4" class="next">&#x203a;</label>
-							</div>
 					    </li>
 
-					    <input type="radio" name="radio-btn" id="img-4" />
 					    <li class="slide-container">
 					        <div class="slide">
 					        	<img src="<?php the_field('section_2_image_4'); ?>">
 								<h2><?php the_field('section_2_header_4'); ?></h2>
 								<p><?php the_field('section_2_text_4'); ?></p>
 					        </div>
-							<div class="nav">
-								<label for="img-3" class="prev">&#x2039;</label>
-								<label for="img-5" class="next">&#x203a;</label>
-							</div>
 					    </li>
 
-					        <input type="radio" name="radio-btn" id="img-5" />
 					    <li class="slide-container">
 					        <div class="slide">
 					        	<img src="<?php the_field('section_2_image_5'); ?>">
 								<h2><?php the_field('section_2_header_5'); ?></h2>
 								<p><?php the_field('section_2_text_5'); ?></p>
 					        </div>
-							<div class="nav">
-								<label for="img-4" class="prev">&#x2039;</label>
-								<label for="img-1" class="next">&#x203a;</label>
-							</div>
 					    </li>
 					  
-					    <li class="nav-dots">
-					      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-					      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-					      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-					      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-					      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-					    
-					    </li>
 					</ul>
 
 				</div>
@@ -162,7 +130,7 @@ get_header(); ?>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
 
-
+</main>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .wrap -->

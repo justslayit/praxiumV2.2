@@ -413,6 +413,9 @@ function twentyseventeen_scripts() {
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 	wp_enqueue_style( 'custom-fonts', 'https://fonts.googleapis.com/css?family=Permanent+Marker', array(), null);
 
+	wp_enqueue_style( 'slider-style', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), null);
+
+
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'custom-style', get_theme_file_uri( 'custom.css' ) );
@@ -452,6 +455,10 @@ function twentyseventeen_scripts() {
 	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
+
+	wp_enqueue_script( 'slick-carousel', "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", array('jquery'), '2.1.2', true );
+
+	wp_enqueue_script( 'custom-slider', get_theme_file_uri( '/assets/js/slider.js' ), array( 'jquery' ), '2.1.2', true );
 
 	wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
 
