@@ -1,5 +1,5 @@
 /* Menu Bar */
-.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a:active, .menu a:hover, .menu a:focus {
+.navigation-top .current-menu-item > a, .menu a:hover, .menu a:focus, .navigation-top .current_page_item > a:active {
 	color: #ED7600;
 	font-weight: bold;
 }
@@ -31,6 +31,56 @@
     background-color: #EFCA08;
     color: #000000;
     border: #000000 2px solid;
+}
+
+.site-info {
+	display: flex;
+	margin-left: -10px;
+}
+
+.site-info img {
+	height: 30px;
+	width: auto;
+	padding-left: 25px;
+	margin-top: 2px;
+}
+
+.site-info a:hover {
+	text-decoration: none;
+}
+
+.site-info .menu {
+	display: flex;
+	width: 500px;
+}
+
+.site-info li a:hover, .site-info li a:focus, .site-info li a:active {
+    color: #ED7600;
+}
+
+.site-info li a {
+	font-weight: bold;
+}
+
+.site-info .menu-item-17 {
+	display: none;
+}
+
+.site-info .social {
+	display: flex;
+	padding-left: 120px;
+}
+
+.site-info .social a img {
+   	padding-right: 0px; 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    margin-top: 5px;
+    width: auto;
+}
+
+.site-info .social #instagram, .site-info .social #medium {
+	margin-left: -10px;
 }
 
 /* Home Page */
@@ -87,7 +137,7 @@ h3, h4 {
 }
 
 .support img {
-	margin-top: -30px;
+	margin-top: -40px;
 	margin-left: -30px;
 }
 
@@ -388,6 +438,21 @@ label {
 /* Mobile Ver. */
 @media screen and (max-width: 768px) {
 
+	/* Menu Bar */
+	.navigation-top .wrap {
+	display: flex;
+	flex-direction: row-reverse;
+	padding-right: 125px;
+	}
+
+	.navigation-top .wrap .menu {
+	margin-right: 30px;
+	}
+
+	.site-footer {
+		display: none;
+	}
+
 	/* Home Page */
 
 	.home .section-1, .home .section-2, .home .section-3 {
@@ -445,6 +510,7 @@ label {
 
 	.support img {
 		margin-left: 14px;
+		padding-top: 10px;
 	}
 
 	.students {
