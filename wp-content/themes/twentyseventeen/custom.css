@@ -1,3 +1,38 @@
+/* Menu Bar */
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a:active, .menu a:hover, .menu a:focus {
+	color: #ED7600;
+	font-weight: bold;
+}
+
+.navigation-top .wrap {
+	display: flex;
+}
+
+.navigation-top .wrap img {
+	height: 30px;
+	width: auto;
+	padding-left: 25px;
+	margin-top: 2px;
+}
+
+#menu-item-17 a {
+	margin-left: 250px;
+	background-color: #EFCA08;
+	color: #000000;
+	text-align: center;
+	border-radius: 8px;
+	height: 20px;
+	width: 100px;
+	border: #EFCA08 2px solid;
+	padding-top: 1px;
+}
+
+#menu-item-17 a:hover {
+    background-color: #EFCA08;
+    color: #000000;
+    border: #000000 2px solid;
+}
+
 /* Home Page */
 
 .blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
