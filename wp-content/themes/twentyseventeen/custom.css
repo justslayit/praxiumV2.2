@@ -1,4 +1,9 @@
+/* Desktop Ver. */
+
 /* Menu Bar */
+.navigation-top {
+	border-top: 0;
+}
 .navigation-top .current-menu-item > a, .menu a:hover, .menu a:focus, .navigation-top .current_page_item > a:active {
 	color: #ED7600;
 	font-weight: bold;
@@ -47,6 +52,7 @@
 
 .site-info a:hover {
 	text-decoration: none;
+	box-shadow: initial;
 }
 
 .site-info .menu {
@@ -71,7 +77,11 @@
 	padding-left: 120px;
 }
 
-.site-info .social a img {
+.site-info .social a {
+	display: contents;
+}
+
+.site-info .social img {
    	padding-right: 0px; 
     padding-top: 0px; 
     padding-bottom: 0px; 
@@ -137,7 +147,7 @@ h3, h4 {
 }
 
 .support img {
-	margin-top: -40px;
+	margin-top: -30px;
 	margin-left: -30px;
 }
 
@@ -435,22 +445,68 @@ label {
 }
 
 
-/* Mobile Ver. */
-@media screen and (max-width: 768px) {
 
+/* Mobile Ver. */
+
+@media screen and (max-width: 768px) {
 	/* Menu Bar */
+	html {
+		transition: all 0.5s ease-in-out;
+	}
 	.navigation-top .wrap {
-	display: flex;
-	flex-direction: row-reverse;
-	padding-right: 125px;
+		display: flex;
+		justify-content: center;
 	}
 
 	.navigation-top .wrap .menu {
-	margin-right: 30px;
+		margin-right: 30px;
+		width: 20%;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
+	.menu-toggle:focus {
+		outline: 0;
+	}
+	.main-navigation.toggled-on {
 
+	}
+	.toggled-on #top-menu {
+		background-color: transparent;
+		left: -200px;
+		width: 200px;
+		top: 0;
+		bottom: 0;
+		border: 0;
+	}
+	html.menu-open {
+		background-color: #ed7600;
+		transform: translateX(200px);
+	}
 	.site-footer {
 		display: none;
+	}
+	.main-navigation li {
+		border: 0;
+		text-align: center;
+	}
+	.navigation-top .current-menu-item > a, .menu a:hover, .menu a:focus, .navigation-top .current_page_item > a:active {
+		color: #ffffff;
+	}
+
+	#menu-item-17 a {
+		margin-left: initial;
+		background-color: transparent;
+		border: 0;
+		padding: 0.5em 0;
+		height: initial;
+		width: initial;
+	}
+
+	#menu-item-17 a:hover {
+   	color: #ED7600;
+    font-weight: bold;
+    border: 0;
 	}
 
 	/* Home Page */
@@ -712,4 +768,3 @@ label {
 	}
 	
 }
-
