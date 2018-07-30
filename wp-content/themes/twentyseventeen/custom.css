@@ -272,6 +272,15 @@ h3, h4 {
 	display: flex;
 }
 
+#post-7 > div.about > div.section-3 > div.section-3-2 > div.left, #post-7 > div.about > div.section-3 > div.section-3-2 > div.right {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.about .section-3-2 img {
+	padding-left: 20px;
+}
+
 .about .section-3 img {
 	padding-right: 20px;
 	width: 800px;
@@ -589,6 +598,15 @@ label {
 	}
 
 	/* About Page */
+
+	#post-7 > div.about > div.section-3 > div.section-3-2 > div.left, #post-7 > div.about > div.section-3 > div.section-3-2 > div.right {
+	flex-direction: column;
+	text-align: center;
+}
+	
+	.about .section-3-2 img {
+		padding-left: initial;
+	}
 
 	.about .section-1 {
 		display: grid;
