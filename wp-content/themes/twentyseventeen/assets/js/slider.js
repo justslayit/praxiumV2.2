@@ -17,4 +17,8 @@ jQuery(document).ready(function( $ ) {
       	}
       });
 
+      $('.header-section').click(function() {
+      	$(this).toggleClass("toggled-on");
+      });
+
     });

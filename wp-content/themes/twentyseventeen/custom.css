@@ -333,6 +333,124 @@ h3, h4 {
 	"text image";
 }
 
+/* School Programmes Page */
+#primary.school-programme-primary {
+	background-image: url("https://image.ibb.co/jHy6ke/3_2_School_Programmes.jpg");
+	width: 900px; 
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 1750px;
+}
+
+.school-programmes {
+	display: flex;	
+	flex-direction: column;
+}
+
+.school-programmes .top h3 {
+	color: #ED7600;
+	border: 2px solid #ed7600;
+	width: 150px;
+	text-align: center;
+	height: 30px;
+	line-height: 27px;
+}
+
+.school-programmes .section-1, .school-programmes .section-2, .school-programmes .section-3 {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.school-programmes .section-4 {
+	display: flex;
+	flex-direction: row;
+}
+
+.school-programmes .section-1, .school-programmes .section-3 {
+	align-self: flex-end;
+}
+
+.school-programmes .section-4 .right {
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.school-programmes .section-4 .left {
+	margin-top: 50px;
+}
+
+.school-programmes .section-1 {
+	padding-top: 150px;
+	margin-right: 20px;
+}
+
+.school-programmes .section-2 {
+	padding-top: 120px;
+	margin-left: 50px;
+}
+
+.school-programmes .section-3 {
+	margin-right: 50px;
+	padding-top: 180px;
+	padding-bottom: 102px;
+}
+
+.school-programmes .contact-form {
+	display: grid;
+	grid-template-areas: "name message"
+						 "email message"
+						 "subject message";
+	width: 540px;
+
+}
+
+.school-programmes .contact-form .name {
+	grid-area: name;
+	display: flex;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.school-programmes .contact-form .email {
+	grid-area: email;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.school-programmes .contact-form .subject {
+	grid-area: subject;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.school-programmes #first-name, .school-programmes #last-name, .school-programmes #email-address, .school-programmes #subject {
+	height: 30px;
+}
+
+.school-programmes #subject {
+	margin-top: -20px;
+}
+
+.school-programmes #message {
+	height: 108px;
+}
+
+.school-programmes .contact-form .message {
+	grid-area: message;
+	height: 65px;
+}
+
+.school-programmes .fname, .school-programmes .lname, .school-programmes .email, .school-programmes .subject, .school-programmes .message { 
+	padding-top: initial;
+	padding-top: 10px;
+}
+
+.school-programmes .send {
+	margin-top: -70px;
+}
+
 /* Contact Page */
 
 .social { 
@@ -481,9 +599,7 @@ label {
 	.menu-toggle:focus {
 		outline: 0;
 	}
-	.main-navigation.toggled-on {
-
-	}
+	
 	.toggled-on #top-menu {
 		background-color: transparent;
 		left: -200px;
@@ -503,6 +619,7 @@ label {
 		border: 0;
 		text-align: center;
 	}
+
 	.navigation-top .current-menu-item > a, .menu a:hover, .menu a:focus, .navigation-top .current_page_item > a:active {
 		color: #ffffff;
 	}
@@ -517,9 +634,10 @@ label {
 	}
 
 	#menu-item-17 a:hover {
-   	color: #ED7600;
+   	color: #FFFFFF;
     font-weight: bold;
     border: 0;
+    background-color: transparent;
 	}
 
 	/* Home Page */
@@ -658,6 +776,185 @@ label {
 
 	.about .section-1 .text {
 		margin-top: -50px;
+	}
+
+	.about .section-4 h2 {
+		text-align: center;
+	}
+
+	/* School Programmes Page */
+	#primary.school-programme-primary {
+	width: initial; 
+	width: 375px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("https://preview.ibb.co/k0Y0Ve/3_1_School_Programmes.jpg");
+	}
+
+	.school-programmes .top h3 {
+		color: initial;
+		border: initial;
+		text-align: initial;
+		font-size: 14px;
+	}
+
+	.school-programmes .section-1 .header h2, .school-programmes .section-2 .header h2, .school-programmes .section-3 .header h2 {
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: bold;
+		color: black;
+	}
+
+	.school-programmes .section-4 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.school-programmes .button {
+		display: none;
+	}
+
+	.school-programmes .section-1, .school-programmes .section-2, .school-programmes .section-3, .school-programmes .section-4, .school-programmes .section-4 .right {
+		align-self: initial;
+		width: 375px;
+	}
+
+	.school-programmes .text, .school-programmes .section-4 .header {
+		text-align: center;
+	}
+
+	.school-programmes .section-1, .school-programmes .section-2, .school-programmes .section-3 {
+		margin-left: initial;
+		margin-right: initial;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.school-programmes .section-1 {
+		padding-top: initial;
+		padding-top: 110px;
+	}
+
+	.school-programmes .section-1 .top {
+		align-self: flex-end;
+		margin-right: 35px;
+	}
+
+	.school-programmes .section-1 .header {
+		align-self: flex-end;
+		padding-right: 10px;
+		margin-top:	-4px;
+	}
+
+	.school-programmes .section-2 {
+		margin-top: -39px;
+	}
+
+	.school-programmes .section-2 .top, .school-programmes .section-2 .header {
+		padding-left: 45px;
+	}
+
+	.school-programmes .section-2 .header {
+		margin-top: -3px;
+	}
+
+	.school-programmes .section-2 .text {
+		padding-top: 5px;
+	}
+
+	.school-programmes .section-3 {
+		margin-top: -110px;
+	}
+
+	.school-programmes .section-3 .top, .school-programmes .section-3 .header {
+			align-self: flex-end;
+	}
+
+	.school-programmes .section-3 .top {
+			padding-right: 45px;
+	}
+
+	.school-programmes .section-3 .header {
+			padding-right: 20px;
+	}
+
+	.school-programmes .section-4 .right {
+		margin-left: initial;
+		margin-right: initial;
+		padding-top: 10px;
+	}
+
+	.school-programmes .section-4 .right .text {
+		margin-top: 10px;
+	}
+
+	.school-programmes .section-4 .left {
+		margin-top: 11px;
+	}
+
+	.school-programmes .fname, .school-programmes .lname, .school-programmes .email, .school-programmes .subject, .school-programmes .message {
+		padding-top: 0px;
+	}
+
+	.school-programmes #first-name, .school-programmes #last-name, .school-programmes #email-address, .school-programmes #subject {
+		height: 15px;
+		margin-top: -5px;
+	}
+
+	.school-programmes #subject {
+		margin-top: -28px;
+	}
+
+	.school-programmes .contact-form .name, .school-programmes .contact-form .email, .school-programmes .contact-form .subject {
+		width: 180px;
+		margin-left: 8px;
+		padding-top: 2px;
+	}
+
+	.school-programmes .contact-form .message {
+		margin-left: -177px;
+		padding-top: 1px;
+	}
+
+	.school-programmes .contact-form #message {
+		height: 80px;
+		width: 146px;
+		margin-top: -28px;
+	}
+
+	.school-programmes #submit {
+		height: 15px;
+		margin-top: 8px;
+		margin-right: 34px;
+		line-height: 1px;
+	}
+
+	.school-programmes label {
+		font-size: 12px;
+	}
+
+	.school-programmes .section-2 .top {
+		margin-left: 15px;
+	}
+
+	.school-programmes .section-1 .header h2, .school-programmes .section-2 .header h2, .school-programmes .section-3 .header h2 {
+		margin: 0;
+		background-color: #EFCA08;
+		border: 2px solid #000000;
+		border-radius: 10px;
+		width: 190px;
+		padding-left: 13px;
+	}
+
+	.school-programmes .section-1 .text, .school-programmes .section-2 .text, .school-programmes .section-3 .text {
+		padding-top: 10px;
+	}
+
+	.school-programmes .text .toggled-on {
+		background-color: rgba(255, 255, 255, 0.2);
+		border: 2px solid #D3D3D3;
+		border-radius: 10px;
+		display: none;
 	}
 
 	/* Contact Page */
